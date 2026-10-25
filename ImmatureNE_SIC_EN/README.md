@@ -1,4 +1,4 @@
-# NE-99: Day-1 neutrophil phenotypes and Day-3 SIC prediction
+# \ Day-1 neutrophil phenotypes and Day-3 SIC prediction
 
 Analysis package accompanying the manuscript on Day-1 neutrophil phenotypes (flow cytometry) and
 the prediction of sepsis-induced coagulopathy (SIC) on Day 3 in sepsis.
