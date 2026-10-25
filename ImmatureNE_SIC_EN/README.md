@@ -64,7 +64,7 @@ ethics approval of the participating centre.
 
 Patient-level data are **not** distributed with this repository. De-identified datasets are available
 from the corresponding author upon reasonable request and after approval by the Institutional Review
-Board of Zhongda Hospital, Southeast University (contact: [corresponding author], [email]).
+Board of Zhongda Hospital, Southeast University (contact:Yanzi Guo, gyz2002@126.com).
 
 Data are shared as csv files with study codes only (`P001`-`P099` for patients, `HC001`-`HC017` for
 healthy controls); source identifiers and calendar dates are removed.
