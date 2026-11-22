@@ -1,0 +1,3 @@
+comparison,delta_auc_mean,delta_auc_lo,delta_auc_hi,margin,conclusion
+Simplified model vs Clinical model (7 predictors),0.014830508474576232,-0.00578512396694209,0.038461538461538436,-0.05,Passed
+Simplified model vs Combined model (8 predictors),0.0021186440677967155,-0.005051361068310145,0.010861574234403553,-0.05,Passed

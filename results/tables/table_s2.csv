@@ -1,0 +1,6 @@
+﻿Biomarker,"Patients, n",P for time,P for Day 1 SIC group,P for time × group interaction
+CD63 MFI in total neutrophils,98,0.441,0.061,0.826
+CD62L MFI in total neutrophils,99,0.032,0.345,0.212
+CD66b MFI in total neutrophils,99,0.030,0.121,0.268
+CD16 MFI in total neutrophils,99,<0.001,0.484,0.153
+"CD10- neutrophils, %",99,<0.001,<0.001,0.035

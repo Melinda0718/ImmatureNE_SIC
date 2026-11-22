@@ -1,0 +1,12 @@
+﻿item,value
+n,99.0
+PT_control_s,11.0
+D_dimer_ULN_ug_per_L,500.0
+DIC_cutoff,5.0
+DIC_positive,22.0
+DIC_negative,77.0
+DIC_indeterminate,0.0
+n_D2_backfilled,2.0
+DIC_prevalence_pct,22.2
+median_score,3.0
+mean_score,3.1
