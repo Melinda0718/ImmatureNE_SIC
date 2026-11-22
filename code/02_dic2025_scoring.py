@@ -52,9 +52,9 @@ CUT = 5                  # ISTH 2025: total >= 5 supports overt DIC
 # results are used for DIC scoring only; the data file is not modified and platelets stay Day 1.
 # Source: ICU laboratory system screenshots of the routine fibrinolysis panel.
 D2_BACKFILL = {
-    "ZD-SIC-124": dict(date="2024-12-29", PT=10.6, INR=0.95, PTA=110.0, FIB=4.9,
+    "P086": dict(date="2024-12-29", PT=10.6, INR=0.95, PTA=110.0, FIB=4.9,
                        APTT=35.1, TT=15.5, ATIII=55.0, FDP=4.30, D_dimer=1144.0),
-    "ZD-SIC-135": dict(date="2025-03-05", PT=12.2, INR=1.10, PTA=87.0, FIB=4.0,
+    "P097": dict(date="2025-03-05", PT=12.2, INR=1.10, PTA=87.0, FIB=4.0,
                        APTT=36.2, TT=19.7, ATIII=86.0, FDP=42.80, D_dimer=18127.0),
 }
 FILL_COLS = ["PT", "INR", "PTA", "FIB", "APTT", "TT", "ATIII", "FDP", "D_dimer"]
