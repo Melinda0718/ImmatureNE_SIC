@@ -1,6 +1,6 @@
 # Circulating CD10-negative neutrophil percentage in sepsis-induced coagulopathy
 
-Analysis code and de-identified data for the study:
+Analysis code for the study:
 
 > **Circulating CD10⁻ Neutrophil Percentage as a Novel Biomarker for Sepsis-Induced
 > Coagulopathy Diagnosis: A Prospective Cohort Study**
@@ -14,19 +14,24 @@ percentage and CD63 / CD16 / CD62L / CD66b expression on Days 1, 3 and 7.
 
 | Path | Description |
 |---|---|
-| `data/NE_baseline_D1.csv` | Day 1 clinical and flow-cytometry variables, 99 patients × 110 variables |
-| `data/NE_baseline_D3.csv` | Day 3 variables, 99 patients × 56 variables |
-| `data/NE_baseline_D7.csv` | Day 7 variables, 99 patients × 56 variables |
-| `data/NE_HC.csv` | Healthy controls, 17 × 26 variables |
-| `data/DATA_DICTIONARY.md` | Variable list and definitions |
-| `code/` | Analysis scripts (**see `code/README.md`**) |
+| `code/01_main_analysis.ipynb` | Main analysis: Table 1–3, sTable S1/S2/S8, Figure 2 panels, Supplementary Figures S2–S5 |
+| `code/tables.py` | Module that computes and formats every table |
+| `code/02_dic2025_scoring.py` | Day-1 overt DIC recomputed with the ISTH 2025 criteria |
+| `code/03_dic2025_roc.py` | ROC of the five Day-1 markers for overt DIC |
+| `code/README.md` | How to run the code |
+| `data/DATA_DICTIONARY.md` | Variable names, units and coding |
 | `results/tables/` | Intermediate CSV outputs of the table pipeline |
 
-## De-identification
+## Data availability
 
-Patient records are relabelled `P001`–`P099`; the same labels are used across Day 1, 3
-and 7 files. Healthy controls are `HC-001`–`HC-017`. The original laboratory codes, the
-flow-cytometry file names and all other direct identifiers have been removed.
+The patient-level dataset is **not distributed with this repository**. The de-identified data
+are available from the corresponding author on reasonable request:
+
+- Xiaojing Wu — 36410257@qq.com
+- Yingzi Huang — yz_huang@126.com
+
+`data/DATA_DICTIONARY.md` documents every variable so that the code can be applied to the data
+once they are obtained.
 
 ## Environment
 
@@ -41,10 +46,20 @@ Install with:
 pip install -r requirements.txt
 ```
 
+Then, from the repository root:
+
+```bash
+jupyter lab code/01_main_analysis.ipynb
+python code/02_dic2025_scoring.py
+python code/03_dic2025_roc.py
+```
+
 ## Licence
 
-Code: MIT. Data: CC BY 4.0 (see `LICENSE`).
+Code: MIT (see `LICENSE`). No data are licensed here because no patient-level data are
+distributed.
 
 ## Contact
 
-Corresponding author: Xiaojing Wu (36410257@qq.com); Yingzi Huang (yz_huang@126.com).
+Yanzi Guo (gyz2002@126.com) — please open an issue or write if you have any problem
+running the code.
